@@ -1,0 +1,2 @@
+int startGame();
+int startStage();
