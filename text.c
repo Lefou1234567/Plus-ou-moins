@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "text.h"
+#include "error.h"
 
 int printTitle1(char* text) {
 
 	printf("\n\t");
 	printStars(5);
-	printf("%s", text);
+	printf(" %s ", text);
 	printStars(5);
 	printf("\n\n");	
 
@@ -21,18 +22,30 @@ int printStars(int numberOfStars) {
 	return 0;
 }
 
-int printMenuSeparator(int numberOfCaracteres) {
+int printErrorWrongChoice(const int choice) {
 
-	for(int i = 0; i < numberOfCaracteres; i++) 
-		printf("#");
-	printf("\n");
+	printf("\n%d n'est pas une reponse attendue !\n\n", choice);
+
 	return 0;
-
 }
 
-int printMenuChoice(char* text, int number) {
-
-	printf("%d.%s\n", number, text);
-
+int printEndingMessage() {
+	
+	printTitle1("Merci d'avoir joue !");
 	return 0;
+}
+
+int printErrorVariable(char* variableName) {
+
+	printError("", 0);
+	printf("La valeur de \"%s\" n'est pas aux normes !\n", variableName);
+}
+
+int printError(char* error, int printLine) {
+	
+	printf("ERREUR : %s", error);
+	
+	if(printLine)
+		printf("\n");
+
 }

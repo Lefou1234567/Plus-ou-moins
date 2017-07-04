@@ -1,0 +1,5 @@
+1;creer un makeFile;1
+2;Creer un fichier printError est y placer les fonctions associees;2
+3;Remplacer "int difficult" par "enum Difficult difficult";2
+4;Remplacer "int level" par "enum Level level";2
+5;Creer une variable globale pour la difficultee et le niveau de la partie;1

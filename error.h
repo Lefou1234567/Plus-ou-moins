@@ -1,0 +1,2 @@
+int errorValueDifficult();
+int errorValueLevel();

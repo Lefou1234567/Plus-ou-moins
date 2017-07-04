@@ -1,9 +1,14 @@
-
-
-enum Difficulte {
-
-	FACILE, MOYEN, DIFFICILE
-};
-
 int mainMenu();
-int printMainMenu();
+int choiceMainMenu();
+int isChoiceMainMenuRight(const int);
+int mainMenuGoTo(const int);
+int difficultMenu();
+int choiceDifficultMenu(int*);
+int isChoiceDifficultMenuRight(const int);
+int setDifficult(int*, const int);
+int difficultMenuGoTo(const int, const int);
+int levelMenu(const int);
+int choiceLevelMenu(int*);
+int isChoiceLevelMenuRight(const int);
+int setLevel(int*, const int);
+int levelMenuGoTo(const int, const int, const int);

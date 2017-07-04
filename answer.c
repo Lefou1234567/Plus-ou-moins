@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "answer.h"
+#include "error.h"
 
 int scanInteger(int* integer) {
 	
