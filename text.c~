@@ -33,7 +33,7 @@ int printGameIndications(const int isSecretNumberBigger, const int numberOfTry, 
 		if(isUnlimitedTry)
 			printf(" (essai %d)\n", numberOfTry);
 		else 
-			printf(" (il reste %d essais)\n\n", maxTry - numberOfTry);
+			printf(" (il reste %d essais)\n", maxTry - numberOfTry);
 	}
 	return 0;
 }

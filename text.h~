@@ -5,4 +5,4 @@ int printEndingMessage();
 int printErrorVariable(char*);
 int printError(char*, int);
 int printText(char*);
-int printGameIndications(const int, const int, const int, const int);
+int printGameIndications();

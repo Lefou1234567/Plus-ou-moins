@@ -52,7 +52,7 @@ int setMaxNumber(int* maxNumber, const int difficult) {
 		*maxNumber = 100;
 		break;
 	case 2 : 
-		*maxNumber = 1000;
+		*:maxNumber = 1000;
 		break;
 	case 3 : 	
 		*maxNumber = 10000;
