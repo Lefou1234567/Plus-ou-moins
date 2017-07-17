@@ -9,6 +9,7 @@ int scanInteger(int* integer) {
 	scanf("%d", integer);
 	
 	return 0;	
+
 }
 
 int scanString(char* string) {
@@ -17,4 +18,6 @@ int scanString(char* string) {
 	scanf("%s", string);
 
 	return 0;
+
 }
+

@@ -9,8 +9,13 @@
 
 int main(int argc, char *argv[]) {
 
-	printTitle1("Bienvenue dans le jeu du plus ou du moins !");
+	printFirstProgramSeparator();
+	printBeginingMessage();
 	startGame();
 	printEndingMessage();
+	printLastProgramSeparator();
+
 	return 0;
+
 }
+

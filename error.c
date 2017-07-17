@@ -8,6 +8,7 @@ int errorValueDifficult() {
 	printErrorVariable("difficult");
 
 	return 0;
+
 }
 
 int errorValueLevel() {
@@ -15,4 +16,5 @@ int errorValueLevel() {
 	printErrorVariable("level");
 
 	return 0;
+
 }

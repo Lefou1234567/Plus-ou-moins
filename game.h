@@ -1,9 +1,10 @@
 int startGame();
 int startStage(const int, const int);
 int setSecretNumber(int*, const int);
+int setGameVariables(int *, const int, int*, int*, const int);
 int setMaxNumber(int*, const int);
 int setMaxTryNumber(int*, int*, const int);
-int gameIsPlaying(const int, const int, const int, const int, const int);
+int isGamePlaying(const int, const int, int*, const int, const int, const int);
 int isAnswerRight(const int, const int);
 int areAllTrysUsed(const int, const int, const int);
 int updateVariables(int*, int*, int*, const int);

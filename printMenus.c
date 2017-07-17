@@ -5,18 +5,21 @@
 #include "error.h"
 
 int printMainMenu() {
-	int lengthOfSeparators = 18;
+
+	int lengthOfSeparators = 9;
 	int choiceNumber = 1;
 
 	printFirstMenuSeparator(lengthOfSeparators);
-	printMenuChoice("Nouvelle Partie", choiceNumber++);
+	printMenuChoice("Jouer", choiceNumber++);
 	printMenuChoice("Quitter", choiceNumber++);
 	printLastMenuSeparator(lengthOfSeparators);
 
 	return 0;
+
 }
 
 int printDifficultMenu() {
+
 	int lengthOfSeparators = 35;
 	int choiceNumber = 1;
 
@@ -28,9 +31,11 @@ int printDifficultMenu() {
 	printLastMenuSeparator(lengthOfSeparators);
 	
 	return 0;
+	
 }
 
 int printLevelMenu() {
+
 	int lengthOfSeparators = 39;
 	int choiceNumber = 1;
 
@@ -44,25 +49,50 @@ int printLevelMenu() {
 	printLastMenuSeparator(lengthOfSeparators);
 	
 	return 0;
+
+}
+
+int printEndingMenu(const int isGameWon) {
+
+	int lengthOfSeparators = 23;
+	int choiceNumber = 1;
+
+	printFirstMenuSeparator(lengthOfSeparators);
+
+	if(!isGameWon)
+		printMenuChoice("Reessayer", choiceNumber++);
+
+	printMenuChoice("Choisir la difficulte", choiceNumber++);
+	printMenuChoice("Choisir le niveau", choiceNumber++);
+	printMenuChoiceMainMenu(choiceNumber++);
+	printLastMenuSeparator(lengthOfSeparators);
+
+	return 0;
+
 }
 
 int printFirstMenuSeparator(int numberOfCaracteres) {
+
 	printf("\n\n");
 
 	for(int i = 0; i < numberOfCaracteres; i++)
 		printf("#");
+
 	printf("\n");
 
 	return 0; 
+	
 }
 
 int printLastMenuSeparator(int numberOfCaracteres) {
 
 	for(int i = 0; i < numberOfCaracteres; i++)
 		printf("#");
+
 	printf("\n\n");
 
 	return 0;
+
 }
 
 int printMenuChoiceCancel(const int choiceNumber) {
@@ -71,6 +101,16 @@ int printMenuChoiceCancel(const int choiceNumber) {
 	printMenuChoice("Retour", choiceNumber);
 
 	return 0;
+
+}
+
+int printMenuChoiceMainMenu(const int choiceNumber) {
+
+	printf("\n");
+	printMenuChoice("Menu principal", choiceNumber);
+
+	return 0;
+
 }
 
 int printMenuChoice(char* text, const int number) {
@@ -78,5 +118,6 @@ int printMenuChoice(char* text, const int number) {
 	printf("%d.%s\n", number, text);
 
 	return 0;
+
 }
 
