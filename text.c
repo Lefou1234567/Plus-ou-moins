@@ -48,7 +48,7 @@ int printLastProgramSeparator() {
 
 int printFirstGameSeparator() {
 
-	int separatorLength = 48;
+	int separatorLength = 67;
 	int separatorHeight = 2;
 	
 	printf("\n\n");
@@ -69,7 +69,7 @@ int printFirstGameSeparator() {
 
 int printLastGameSeparator() {
 
-	int separatorLength = 48;
+	int separatorLength = 67;
 	int separatorHeight = 2;
 	
 	printf("\n");
